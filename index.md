@@ -1,37 +1,48 @@
-## Welcome to GitHub Pages
+<DOCTYPE html>
+<html>
 
-You can use the [editor on GitHub](https://github.com/audreyongeh/audrey-MyGithub-epblogsite/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+	<head>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+	<title>EP1000 Digital Fabrication & Prototyping</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 
-### Markdown
+	</head>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+	<body>
+		<div id="container">
+			<div id="header">
+				<h1> Audrey's Documentation and Learning</h1>
+				<p>Welcome! Feel free to take a look :D</p>
+			</div>
+			<div id="content">
 
-```markdown
-Syntax highlighted code block
+				<div id="nav">
+					<h3 style="text-align: center;"> Navigation</h3>
 
-# Header 1
-## Header 2
-### Header 3
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<br>
+						<li><a href="about.html">About</a></li>
+						<br>
+						<li><a href="Safety.hmtl">Safety</a></li>
+						<br>
+						<li><a href="Prototyping.html">Prototyping</a></li>
+						<br>
+						<li><a href="Projectmanagement.html">Project Management</a></li>
+						<br>
+						<li><a href="Webdevelopment.html">Web Development</a></li>
+					</ul>							
 
-- Bulleted
-- List
+				</div>
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/audreyongeh/audrey-MyGithub-epblogsite/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+			<div class="main">
+				<h3>EP1000 Digital Fabrication & Prototyping</h3>
+				<br>
+				<p></p>
+			</div>
+			<div id="footer">
+				Copyright &copy; 2020 Audrey Ong
+			</header>
+	</body>
+	
+</html>
