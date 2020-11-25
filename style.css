@@ -6,7 +6,7 @@
 		#header {
 			background-color: #FCF698; 
 			text-align: center;
-			font-family: 'Kanit', sans-serif;
+			font-family: 'Source Code Pro', monospace;
 			padding-bottom: 30px;
 			padding-top: 30px;
 			
@@ -21,7 +21,7 @@
 
 		#content {
 			padding:10px;
-			font-family: 'Muli', sans-serif;
+			font-family: 'Source Code Pro', monospace;
 		}
 
 		#nav {
