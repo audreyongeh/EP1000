@@ -29,12 +29,7 @@
 			float: left;
 			font-weight: bold;
 			color: #E07A00;
-
-		}
-
-		#nav ul {
-			list-style-type: none;
-			padding: 0px;
+			height: 100%
 		}
 
 		#nav.selected {
