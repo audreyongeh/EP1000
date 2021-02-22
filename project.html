@@ -32,7 +32,7 @@
 
 			<div class="main">
 
-				<h2 style="text-align: center;">Project</h2>
+				<h2 style="text-align: center;">The "Literal" Mood Lamp</h2>
 				
 				<h2>1. Research</h2>
 				<p>These are some ideas I wanted to work on/got inspired by. I use the site Instructables. to find inspiration. Many people who have done a variety of projects upload their works there. I'm interested in making a light that has a sensor, such that when you place your hand on it, it lights up.</p>
@@ -46,36 +46,304 @@ This is a silhoutte lamp. Depending on the way you choose to cut an image, a sha
 <br>
 <h3>These are some things I need</h3>
 <p>
-3ply wood
+3ply plywood
 <br>
 switch
 <br>
 Ardino UNO board
 <br>
-Breadboard
+HCS204 Ultrasonic Distance Sensor
+<br>
+Neopixel RGB light strip
 </p>
 <br>
 <br>
-<h3>Concept</h3>
-My final project is like a "literal" mood lamp. Each side has different expressions and will be different coloured. 
-<br>
-<h3>Implementation</h3>
-Add the implementation details of your final project. What are the parts or sub-systems in your project. Add screen captures and design files for the various technologies used in your project
-<br>
-<h3>CAD</h3>
-<h3>3D Printing</h3>
-<h3>Laser Cutting</h3>
-<h3>Electronics</h3>
-<h3>Programming</h3>
-Testing
-Describe the testing process for the various sub-systems that make up your project and how you integrated the different sub-systems.
-Results
-What result did you get from the full testing of your final project?
-Conclusion
-What conclusions can you draw from your final project? What are the issues/problems encountered? How did you resolve them? What are the improvements that can be made to your project?
-Design files & Source Code
-Include all original design files and source code for your project.
+<h3>Concept: A literal mood lamp</h3>
+My final project is like a "literal" mood lamp. Each side has different expressions. As per research, when we use emojis, a certain part of our brain lights up. Our minds are able to digest emotions better. In a sense, it helps for people to see and recognise facial features to resonate with how they are really feeling and process their emotional wellbeing. Mental health is something I am very passionate in. Knowing that is an important factor of "moods", I wanted to incoorperate that into the project. 
 
+Hence, my project is a "literal" mood lamp, in which your personal mood is literally projected on a lamp and displayed before you. 
+
+side note: My original idea was to have different sides a different colour, but sadly that was a bit too difficult to execute. Hence, I settled with changing colours.
+<br>
+<h2>Implementation</h2>
+<br>
+<h3>Sketches</h3>
+<img src="fp2.png" width="300" style="margin: auto;">
+<br>
+Here is me trying to plan out and take notes on the electronics of the project. At first I was going to do 3 different layers, I later found out this was too complicated and not feasible. But here I was operating on that basis.
+<br>
+<img src="fp1.png" width="300" style="margin: auto;">
+<br>
+Here are my rough sketches of the project after cutting it down. I sectioned it as to how I would draw the faces and where I would put the UNO board and LED.
+<h3>CAD</h3>
+<p>Next was designing it.
+<br>
+<img src="fp3.png" width="600" style="margin: auto;">
+<br>
+This is the original 3 layered box I was going to do. The first inner box to hold the UNO board, second with the design and third for the design to be projected. However, I discovered that if I were to do the 3rd layer, the design would not show up as it would be fully opaque (not the same material as what was used in the project I was adapting from)
+<br>
+<br>
+<img src="fp4.png" width="600" style="margin: auto;">
+<br>
+After removing the layers, I started designing the smiley face. I measured the centre of the box and cut out two circles with a connector inebetween to hold it together. To do this I measured the diameters and tried to match them accurately. I repeated this for all four sides of the box. 
+<br>
+<br>
+<img src="fp5.png" width="500" style="margin: auto;"> <img src="fp6.png" width="500" style="margin: auto;">
+<br>
+This is the end product of all four sides. This is following my concept of "literally" showing different moods on the four different sides of the lamp.
+<br>
+<br>
+<img src="fp7.png" width="500" style="margin: auto;">
+<br>
+I also made use of the combine>cut (keep tools) tool (elaborated under Computer Controlled Cutting tab). As you can see here each side is nicely cut out with the "tooth" method. 
+<br>
+<br>
+<img src="fp8.png" width="500" style="margin: auto;"> <img src="fp9.png" width="500" style="margin: auto;">
+<br>
+Here is the box designed, placed below the lamp to hide and keep the UNO board. As you can see, I have also cut and measured holes for where the plug and HCSR04 will be sticking out of. 
+<br>
+<br>
+<br>
+I also needed to design the 3D print part. What I planned for is to have a cylinder in the middle to coil my LED around so that the light will be all around the lamp. 
+<br>
+<img src="fp10.png" width="500" style="margin: auto;">
+<br>
+I made two circles in the middle and extruded it to 100mm.
+This marked the end of my CAD, next was to laser cut the pieces and 3D print my cylinder. 
+
+<h3>3D Printing</h3>
+<img src="fp11.png" width="500" style="margin: auto;">
+<br>
+Here I was exporting to Ultimaker Cura.
+I did not manage to get a screenshot of my settings but I chose skirt, and 5% infil. 
+<br>
+<br>
+<img src="fp12.png" width="300" style="margin: auto;"><img src="fp13.png" width="300" style="margin: auto;">
+<br>
+Here it is getting printed. Reminder that it is good/impt to stand and watch at least the first part of your print to make sure there are no errors or issues.
+
+<h3>Laser Cutting</h3>
+The only material we needed to laser cut was on the 3mm plywood, as I didn't use LibreCAD, I arranged the pieces on CorelDraw closely to print. Putting them closely also allows less wastage of material. 
+<br>
+<img src="fp14.jpg" width="400" style="margin: auto;">
+<br>
+This is me arranging the parts.
+<br>
+<br>
+<img src="fp15.jpg" width="350" style="margin: auto;">
+<br>
+These were the pieces in the process of being laser cut. Since this was 3mm plywood, the settings were 40% power, 6% speed, 200 PMI and 3mm. \
+<br>
+<img src="fp16.jpg" width="350" style="margin: auto;">
+<br>
+These were some cute leftovers hehe :3
+
+
+<h3>Electronics</h3>
+<p>First I tested out on TinkerCAD. My input was the HCS204 Ultrasonic Distance Sensor and my output was the LED NEOpixel strip.
+<br>
+<img src="fp17.png" width="600" style="margin: auto;">
+<br>
+In my final I connected it as <br>
+LED:
+GND = GND
+5V = 5V
+DIN = 9
+<br>
+HCS204:
+TRIG = 5
+ECHO = 6
+GND = GND
+VCC = 5V
+<br>
+<br>
+One of the problems I faced was that the wires broke off, hence had to re-solder them. <br>
+<img src="fp18.png" width="300" style="margin: auto;"> <img src="fp19.png" width="300" style="margin: auto;">
+<br>
+However I had soldiered such that DIN and GRND became connected, hence the LED still did not work. I tested the LED by running source code on the LED on it. I recieved some help to re-soldier it wel, after which the LED began to work again.</p>
+
+<h3>Programming</h3>
+<p>
+My source code was the ADAFruit Neopixel (strand test) and HCSR04 ultrasonic sensor. I downloaded both from the Aurdino sketch library. 
+<img src="fp20.png" width="400" style="margin: auto;"> <img src="fp21.png" width="400" style="margin: auto;">
+<br>
+The codes above are screenshots of source codes from the Aurdino library. I picked and chose from there what code to combine and use for my project.
+<br>
+<br>
+Below is the code that was combined and adapted for this project. I chose the rainbow colours as well as wanted it to remain 2 colours at the end. 
+<img src="fp22.png" width="700" style="margin: auto;">
+<br>
+<br>
+Below is the inserted code for the HCS204. by #include it combines the two together, thus allowing me to use the HCS204 to affect the light. 
+<br>
+hc (5,6) as you can see in the notes next to it allowed me to write the units that each pin was into. 
+<br>
+The highlighted rectangle at the bottom is the code for the distance. The larger the unit, the further the distance between the surface and distance sensor before the light gets affected. 
+<br>
+<img src="fp23.png" width="700" style="margin: auto;">
+<br>
+You can watch a short 30 second video of the code working on the UNO board <a href="https://drive.google.com/file/d/1Y1dYzf6dsYIRoauzjK7OMjjxDOzKd9OP/view?usp=sharing">here.</a>
+<br>
+<br>
+This is my full code:
+<br>
+<br>
+#include <Adafruit_NeoPixel.h>
+<br>
+#ifdef __AVR__
+<br>
+ #include <avr/power.h>
+ <br>
+ #endif
+ <br>
+ #define LED_PIN    9
+ <br>
+ #define LED_COUNT 8
+ <br>
+ <br>
+ Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
+ <br>
+ <br>
+ void setup() {
+ <br>
+#if defined(__AVR_ATtiny85__) && (F_CPU == 16000000)
+ <br>
+ clock_prescale_set(clock_div_1);
+<br>
+#endif
+<br>
+  strip.begin();        
+  <br>
+  strip.show();      
+  <br>
+  strip.setBrightness(50); 
+  <br>
+}
+<br>
+<br>
+void loop() {
+<br>
+  colorWipe(strip.Color(255,   0,   0), 50); // Red
+  <br>
+  colorWipe(strip.Color(  0, 255,   0), 50); // Green
+  <br>
+  colorWipe(strip.Color(  0,   0, 255), 50); // Blue
+<br>
+<br>
+  theaterChase(strip.Color(127, 127, 127), 50); // White, half brightness
+  <br>
+  theaterChase(strip.Color(127,   0,   0), 50); // Red, half brightness
+  <br>
+  theaterChase(strip.Color(  0,   0, 127), 50); // Blue, half brightness
+<br>
+<br>
+  rainbow(10);         
+  <br>    
+  theaterChaseRainbow(50); 
+  <br>
+}
+<br>
+void colorWipe(uint32_t color, int wait) {
+<br>
+  for(int i=0; i<strip.numPixels(); i++) { 
+<br>
+    strip.setPixelColor(i, color);   
+    <br>   
+    strip.show();   
+    <br>              
+    delay(wait);   
+    <br>                      
+  }
+  <br>
+}
+<br>
+<br>
+void theaterChase(uint32_t color, int wait) {
+<br>
+  for(int a=0; a<10; a++) {  
+  <br>
+    for(int b=0; b<3; b++) { 
+    <br>
+      strip.clear();   
+      <br>   
+      for(int c=b; c<strip.numPixels(); c += 3) {
+      <br>
+        strip.setPixelColor(c, color); 
+        <br>
+      }
+      <br>
+      strip.show(); 
+      <br>
+      delay(wait);  
+<br>
+    }
+<br>
+  }
+<br>
+}
+<br>
+<br>
+  for(long firstPixelHue = 0; firstPixelHue < 5*65536; firstPixelHue += 256) {
+    for(int i=0; i<strip.numPixels(); i++) { 
+     <br>
+      int pixelHue = firstPixelHue + (i * 65536L / strip.numPixels());
+      <br>
+      strip.setPixelColor(i, strip.gamma32(strip.ColorHSV(pixelHue)));
+      <br>
+    }
+    <br>
+    strip.show(); 
+    <br>
+    delay(wait);  
+  <br>
+	}
+<br>
+}
+<br>
+<br>
+void theaterChaseRainbow(int wait) {
+<br>
+  int firstPixelHue = 0;     
+  <br>
+  for(int a=0; a<30; a++) { 
+  <br>
+    for(int b=0; b<3; b++) { 
+    <br>
+      strip.clear();         
+      <br>
+      for(int c=b; c<strip.numPixels(); c += 3) {
+       <br>
+        int      hue   = firstPixelHue + c * 65536L / strip.numPixels();
+        <br>
+        uint32_t color = strip.gamma32(strip.ColorHSV(hue)); // hue -> RGB
+        <br>
+        strip.setPixelColor(c, color); // Set pixel 'c' to value 'color'
+        <br>
+      }
+      <br>
+      strip.show();           
+      <br>     
+      delay(wait);                 
+      <br>
+      firstPixelHue += 65536 / 90; 
+      <br>
+    }
+    <br>
+  }
+  <br>
+}
+</p>
+<h3>Conclusion</h3>
+<p>A couple of issues encountered were 1. prototyping the box to be exact fits.<br>
+As I changed my design 3 times, there were bound to be some mishaps. One of my bases were not properly cut due to inaccurate dimensions. This also made designing and fixing difficult and confusing for me. So one thing I learned from this is to really check your materials prior to starting on the design as well as setting you dimensions exact to what you want to prevent time wasted needing to change the design over and over again.
+<br>
+<br>
+My 2. issue and main issue was learning how to connect where to what. I was not very familar with VCC and the Ultrasonic Distance Sensor. So I did some more reading up to understand it better. This helped a lot later on and provided clarity for me to understand how things flowed such as input and output.
+<br>
+<br>
+Improvements that can be made:
+<br> I think it would be nice if the electronics can be hidden within just one box. Right now I need two boxes which makes the lamp very bulky. However, I think with a more concise design, the UNO box can fit inside the lamp the same place the LED is in. The LED was also not as bendable as I expected. An improvement that can be made is to find a better more efficient way to light up the whole box other than roping it around a tube like what I did. 
+</p>
 <br>
 <p>Thank you! That's all :)</p>
 <p>Last updated: 25th November 2020</p>
